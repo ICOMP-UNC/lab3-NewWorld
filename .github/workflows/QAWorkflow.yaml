@@ -14,14 +14,14 @@ jobs:
             go-version: 1.21
 
       - name: Build
-        uses: ./.github/actions/build
+        uses: ./actions/build
         with:
           target-directory: './'
       - name: Linter
-        uses: ./.github/actions/linter
+        uses: ./actions/linter
         with:
           target-directory: './'
       - name: Tests
-        uses: ./.github/actions/tests
+        uses: ./actions/tests
         with:
           target-directory: './tests'

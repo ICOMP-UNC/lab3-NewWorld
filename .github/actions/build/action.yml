@@ -9,4 +9,5 @@ runs:
   using: 'composite'
   steps:
     - name: Build
+      shell: bash
       run: go build -v ${{ inputs.target-directory }}

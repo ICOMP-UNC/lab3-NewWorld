@@ -9,6 +9,7 @@ runs:
   using: 'composite'
   steps:
     - name: Run Tests with Coverage
+      shell: bash
       id: coverage
       run: |
         coverage=$(go test -cover fmt | awk '/coverage: ([0-9.]+)%/{print $NF}')
