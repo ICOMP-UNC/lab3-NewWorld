@@ -1,0 +1,27 @@
+name: QAWorkflow
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Go 1.21
+        uses: actions/setup-go@v5
+        with:
+            go-version: 1.21
+
+      - name: Build
+        uses: ./.github/actions/build
+        with:
+          target-directory: './'
+      - name: Linter
+        uses: ./.github/actions/linter
+        with:
+          target-directory: './'
+      - name: Tests
+        uses: ./.github/actions/tests
+        with:
+          target-directory: './tests'
