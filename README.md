@@ -6,8 +6,8 @@ This project aims to develop a robust and secure backend in Golang using the Fib
 ## 📝 Evaluation Aspects
 - **Code Quality and Architecture**: Implement a clean, well-organized Model-Service-Repository pattern ensuring modularity and maintainability.
 - **Functionality**: Robust functionality across all server endpoints for accurate, real-time supply management.
-- **Security**: Secure API access with JWT authentication to ensure data integrity and protect against unauthorized access.
-- **Scalability**: The application should be scalable, designed to handle increasing loads and concurrent users efficiently.
+- **Security**: Secure API access with JWT authentication to ensure data integrity and protect against unauthorized access. We are also using TLS as a security layer.
+- **Scalability**: The application should be scalable, and designed to handle increasing loads and concurrent users efficiently.
 - **Documentation**: Detailed documentation should include setup instructions, API usage examples, and deployment guidelines.
 
 ## 📽 🎞 New World
